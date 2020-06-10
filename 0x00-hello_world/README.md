@@ -1,0 +1,1 @@
+We are gonna learn basic for C language
