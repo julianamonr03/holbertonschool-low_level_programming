@@ -1,0 +1,1 @@
+In this part we are gonna learn about variables, if ... else ...while
