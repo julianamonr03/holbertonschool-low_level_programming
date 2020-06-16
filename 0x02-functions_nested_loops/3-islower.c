@@ -6,15 +6,12 @@
  */
 int _islower(int c)
 {
-	int a;
-
-	a = islower(c);
-	if (a == 0)
+	if (c <= 'z' && c >= 'a')
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }
