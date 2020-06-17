@@ -6,16 +6,16 @@
  */
 int _isalpha(int c)
 {
-	int b;
-
-	b = isalpha(c);
-	if (b == 0)
-	{
-		return (0);
-	}
-	else
+	if (c <= 'z' && c >= 'a')
 	{
 		return (1);
 	}
-
+	else if (c <= 'Z' && c >= 'A')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
