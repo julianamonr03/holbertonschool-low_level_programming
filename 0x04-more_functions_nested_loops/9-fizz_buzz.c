@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
+ * main - Entry point
  *
- *
- *
+ * Return: Always 0
  */
 int main(void)
 {
@@ -14,7 +14,7 @@ int main(void)
 		{
 		printf("Fizz ");
 		}
-		else if (n % 5 ==0)
+		else if (n % 5 == 0)
 		{
 			printf("Buzz ");
 		}
