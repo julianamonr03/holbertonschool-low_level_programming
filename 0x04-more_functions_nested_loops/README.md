@@ -1,0 +1,1 @@
+We are gonna learn more abput functions and nested loops
