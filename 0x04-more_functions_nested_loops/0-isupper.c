@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _isupper - Entry point
- * @c; int check
+ *@c: int check
  * Return: is is uppercase
  */
 int _isupper(int c)
