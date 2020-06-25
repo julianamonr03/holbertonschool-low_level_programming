@@ -1,0 +1,1 @@
+In this part we are gonna lear more about pointers and arrays
