@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * natural_square - Find the natural square of a number
- * @x:
- * @n:
+ * @x: variable number
+ * @n: Number given
  * Return: Natural square
  */
 int natural_square(int x, int n)
