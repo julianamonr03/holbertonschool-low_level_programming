@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- * main function - Entry point
+ * main - Fucntion Entry point
  * Programs that prints its name
  * @argc: Size of arguments
  * @argv: Size of array
  * Return: No return
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	argc = 0;
 
