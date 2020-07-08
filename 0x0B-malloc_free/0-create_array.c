@@ -1,10 +1,10 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- *
- *
- *
- *
+ * create_array - Create array
+ * @size: Size
+ * @c: Char
+ * Return: Array
  */
 char *create_array(unsigned int size, char c)
 {
@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 
 	if (!array)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	while (a)
 	{
