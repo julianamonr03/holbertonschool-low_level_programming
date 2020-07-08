@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	char *str2;
-	int a, b = 0;
+	int a = 0, b;
 
 	if (str == '\0')
 	{
@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	}
 	for (a = 0; str[a] != '\0'; a++)
 
-		str2 = malloc(b * sizeof(char) + 1);
+		str2 = malloc(a * sizeof(char) + 1);
 
 	if (str2 == '\0')
 	{
