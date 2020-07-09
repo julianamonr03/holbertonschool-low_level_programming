@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		finalstring[fsize] = s1[fsize];
 	}
 
-	for (fsize = 0; fsize < sizes2; fsize++)
+	for (fsize = 0; fsize < sizes2 + 1; fsize++)
 	{
 		finalstring[sizes1 + fsize] = s2[fsize];
 	}
