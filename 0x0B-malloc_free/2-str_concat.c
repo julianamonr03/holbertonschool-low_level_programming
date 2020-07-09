@@ -10,6 +10,11 @@ char *str_concat(char *s1, char *s2)
 	int sizes1, sizes2, fsize, sum;
 	char *finalstring = NULL;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	for (sizes1 = 0; s1[sizes1] != '\0'; sizes1++)
 		;
 	for (sizes2 = 0; s2[sizes2] != '\0'; sizes2++)
