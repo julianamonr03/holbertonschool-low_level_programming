@@ -34,6 +34,5 @@ char *str_concat(char *s1, char *s2)
 		finalstring[sizes1 + fsize] = s2[fsize];
 	}
 
-	finalstring[sum] = '\0';
 	return (finalstring);
 }
