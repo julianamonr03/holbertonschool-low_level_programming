@@ -36,18 +36,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return ('\0');
 	}
-
 	for (sizes1 = 0; s1[sizes1]; sizes1++)
 	{
 		string[sizes1] = s1[sizes1];
 	}
-
-	for (sizes2 = 0; sizes2 < n; sizes2++)
+	for (sizes2 = 0; sizes2 <= n && s2[sizes2] != '\0'; sizes2++)
 	{
 		string[sizes1] = s2[sizes2];
 		sizes1++;
 	}
-
 	string[sizes1] = '\0';
 	return (string);
 }
