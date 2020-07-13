@@ -2,9 +2,9 @@
 #define _DJANGO_DOG_
 /**
  * struct dog - django dog
- * @char: dog name
- * @float: dog age
- * @char: dog owner
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
  */
 struct dog
 {
