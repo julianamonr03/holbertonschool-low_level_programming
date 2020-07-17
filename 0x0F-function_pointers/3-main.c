@@ -5,29 +5,29 @@
  * @argc: Array of arguments
  * Return: 0 success, 98 if not enought arguments,
  */
-int main(int argv, char *argc[])
+int main(int argc, char *argv[])
 {
 	int (*operator)(int, int);
 	int num1, num2;
 
-	if (argv != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
 
-	num1 = atoi(argc[1]);
-	num2 = atoi(argc[3]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 
-	operator = get_op_func(argc[2]);
+	operator = get_op_func(argv[2]);
 
-	if (operator == NULL)
+	if (operator == NULL || strlen(argv[2]) > 1)
 	{
 		printf("Error\n");
 		return (99);
 	}
 
-	if ((*argc[2] == '/' || *argc[2] == '%') && (num2 == 0))
+	if ((*argv[2] == '/' || *argv[2] == '%') && (num2 == 0))
 	{
 		printf("Error\n");
 		return (100);
