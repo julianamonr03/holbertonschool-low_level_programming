@@ -10,18 +10,21 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list arg;
 	unsigned int a;
+	char *point;
 
 	va_start(arg, n);
 
 	for (a = 0; a < n; a++)
 	{
-		if (arg == NULL)
+		point = va_arg(arg, char*);
+
+		if (point)
 		{
-			printf("(nil)");
+			printf("%s", point);
 		}
 		else
 		{
-			printf("%s", va_arg(arg, char*));
+			printf("(nil)");
 		}
 
 		if (separator && a != (n - 1))
