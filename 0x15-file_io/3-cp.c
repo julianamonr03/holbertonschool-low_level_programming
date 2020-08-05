@@ -1,14 +1,14 @@
 #include "holberton.h"
 /**
  * main - program that copies the content of a file to another file
- * @ac: ...
- * @av: ...
+ * @ac: Number of arguments
+ * @av: Arguments
  * Return: 0 success
  */
 int main(int ac, char *av[])
 {
 	int file, file1, c, c1;
-	ssize_t r, w;
+	ssize_t r;
 	char buffer[1024];
 
 	if (ac != 3)
@@ -32,7 +32,7 @@ int main(int ac, char *av[])
 		exit(99);
 	}
 	r = read(file, buffer, 1024);
-	w = write(file1, buffer, r);
+	write(file1, buffer, r);
 	c = close(file);
 
 	if (c == -1)
