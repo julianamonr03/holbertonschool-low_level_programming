@@ -30,8 +30,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		{
 			node_aux = node_aux->next;
 		}
-		node_aux->next = new; /*Assign last auxiliar node to the new node*/
-		new->prev = node_aux;
+		node_aux->next = new; /*Assign last auxiliar node*/
+		new->prev = node_aux; /*to the new node*/
 		new->next = NULL;
 	}
 	return (new);
