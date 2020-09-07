@@ -10,7 +10,7 @@ int sum_dlistint(dlistint_t *head)
 
 	while (head)/* While list exist sum data */
 	{
-		sum += head->n; /* */
+		sum += head->n; /* Sum the data in nodes*/
 		head = head->next;
 	}
 	return (sum);
