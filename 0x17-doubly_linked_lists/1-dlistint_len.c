@@ -1,17 +1,17 @@
 #include "lists.h"
 /**
- * dlistint_len- function that returns the number of elements
- * @h: list header
- * Return: number of elements in dlistint_t
+ * dlistint_len - returns the number of elements in a linked dlistint_t list
+ * @h: head of the list
+ * Return: number of elements
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t i = 0; /* Variable for counting elements*/
+	size_t travel = 0;
 
-	while (h) /* While list exist*/
+	while (h)
 	{
 		h = h->next;
-		i++;
+		travel++;
 	}
-	return (i);
+	return (travel);
 }
