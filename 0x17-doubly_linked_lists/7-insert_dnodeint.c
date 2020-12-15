@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position.
  * @h: head of the list
@@ -14,9 +13,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int i = 0;
 
 	if (!new)
-	{
 		return (NULL);
-	}
 	/*We start addying node is the idx is 0 */
 	if (idx == 0)
 	{
@@ -38,16 +35,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		{
 			return (add_dnodeint_end(h, n));
 		}
-		/*We travel in the list*/
-		aux = aux->next, i++;
+		aux = aux->next, i++; /*We travel in the list*/
 	}
 	/*
 	 * if it is not possible to add the new node at index idx,
 	 * do not add the new node and return NULL
 	*/
 	if (idx > i)
-	{
 		return (NULL);
-	}
+
 	return (new);
 }
