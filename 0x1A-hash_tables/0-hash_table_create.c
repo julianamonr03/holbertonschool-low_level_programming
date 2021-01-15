@@ -7,16 +7,16 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *new = NULL;
+	hash_table_t *new = NULL;
 
-    new = malloc(size * sizeof(hash_table_t));
-    new->size = size;
+	new = malloc(size * sizeof(hash_table_t));
+	new->size = size;
 
-    if (new == NULL)
-    {
-        return (NULL);
-    }
-    new->array = calloc(new->size, sizeof(hash_table_t*));
+	if (new == NULL)
+	{
+		return (NULL);
+	}
+	new->array = calloc(new->size, sizeof(hash_table_t *));
 
-    return (new);
+	return (new);
 }
